@@ -8,11 +8,21 @@
     <link rel="stylesheet" type="text/css" href="stylePainel.css" />
 </head>
 <body>
-    <div class="header">
-        <img class="adminAvatar"  src="avatar.jpg">
-        <label><?=$_GET["email"]?></label>
-    </div>
+    <div class="loginContainer">
+        <h1>Formulário de Contato</h1>
 
-    <div class="mensagem">Bem Vindo</div>
+        <form method="get" action="index.html">
+            <div class="paragrafo">
+                <p>Agora que você já completou o cadastro e login você poderá utilizar o formulário abaixo para enviar um feedback!</p>
+            </div>
+            <label>E-Mail: <?=$_GET["email"]?></label>
+
+            <textarea class="textBox feedback" cols="40" rows="5" placeholder="Digite seu feedback aqui..."></textarea>
+
+            <button class="loginButton" type="submit">Enviar</button>
+
+            <label class="failedAuthMessage"></label>
+        </form>
+    </div>
 </body>
 </html>

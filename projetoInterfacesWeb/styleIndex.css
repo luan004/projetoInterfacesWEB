@@ -33,11 +33,6 @@ label {
     border-color: #c9c7c3;
 }
 
-.failedAuthMessage {
-    font-size: 12px;
-    color: rgb(128, 0, 0);
-}
-
 .loginButton {
     margin-top: 20px;
     width: 100%;
