@@ -5,37 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luan - Projeto de Interfaces WEB</title>
+    <link rel="stylesheet" type="text/css" href="styleIndex.css" />
 </head>
-<style>
-    @font-face {
-        font-family: Nunito;
-        src: url(Nunito-Regular.ttf);
-    }
-
-    body {
-        background-color: #1f1f1f;
-    }
-
-    div {
-        width: 300px;
-        background-color: red;
-    }
-    
-    label {
-        width: 100%;
-        color: white;
-        font-family: Nunito;;
-        display: block;
-    }
-</style>
 <body>
-    <div>
-        <form method="get" action="painel.html">
-            <label>Usuário</label>
-            <input type="text">
+    <div class="loginContainer">
+        <h1>Cadastrar Usuário</h1>
+        <form method="get" action="login.html">
+
+            <label>Nome Completo</label>
+            <input name="nome" type="text"class="textBox" value="">
+            
+            <label>E-Mail</label>
+            <input name="email" type="text" class="textBox" value="">
+
+            <label>Endereço</label>
+            <input name="endereco" type="text" class="textBox" value="">
+            
+
             <label>Senha</label>
-            <input type="password">
+            <input name="senha" type="password" class="textBox" value="">
+
+            <label>Gênero</label>
+            <div class="generoBox">
+                <input type="radio" name="sexo" value="M" /> Masculino
+                <input type="radio" name="sexo" value="F" /> Feminino
+            </div>
+
+            <label>Idade</label>
+            <div class="generoBox">
+                <input type="radio" name="sexo" value="Maior" /> Maior de Idade
+                <input type="radio" name="sexo" value="Menor" /> Menor de Idade
+            </div>
+
+            <label>Estado Civil</label>
+            <select name="cursos" id="listcursos" class="selector">
+                <option value="blank"></option>
+                <option value="Informatica">Informatica</option>
+                <option value="Agroindustria">Agroindustria</option>
+                <option value="Mecatronica">Mecatronica</option>
+                <option value="Engenharia de Software">Engenharia de Software</option>
+            </select>
+
+            <button class="loginButton" type="submit">Cadastrar</button>
+            <label class="failedAuthMessage"></label>
         </form>
     </div>
 </body>
+<script src="index.js"></script>
 </html>

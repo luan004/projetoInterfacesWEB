@@ -1,0 +1,39 @@
+@font-face {
+    font-family: NunitoBold;
+    src: url(Nunito-Bold.ttf);
+}
+
+body {
+    background-color: #303030;
+    margin: 0;
+}
+
+.header {
+    background-color: #141414;
+    height: 100px;
+    width: 100%;
+}
+
+.adminAvatar {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    border-radius: 40px;
+    float: left;
+}
+
+label {
+    color: white;
+    font-family: NunitoBold;
+    font-size: 20px;
+    margin: 36px 10px;
+    display: inline-block;
+}
+
+.mensagem {
+    color: white;
+    font-family: NunitoBold;
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+}
