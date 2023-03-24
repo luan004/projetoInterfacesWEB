@@ -20,8 +20,6 @@
             <textarea class="textBox feedback" cols="40" rows="5" placeholder="Digite seu feedback aqui..."></textarea>
 
             <button class="loginButton" type="submit">Enviar</button>
-
-            <label class="failedAuthMessage"></label>
         </form>
     </div>
 </body>

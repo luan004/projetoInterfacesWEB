@@ -73,3 +73,18 @@ label {
     outline: none !important;
     font-family: NunitoBold;
 }
+
+.check {
+    width: 10%;
+    margin: 20px 0px 0px 0px;
+    float: left;
+}
+
+.termosText {
+    width: 90%;
+    float: right;
+}
+
+.termosBox {
+    display: flex;
+}

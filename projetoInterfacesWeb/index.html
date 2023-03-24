@@ -25,6 +25,9 @@
             <label>Senha</label>
             <input name="senha" type="password" class="textBox" value="">
 
+            <label>Idade</label>
+            <input type="date" class="textBox" name="nasc">
+
             <label>Gênero</label>
             <div class="generoBox">
                 <input type="radio" name="genero" value="M" /> Masculino
@@ -43,9 +46,13 @@
                 <option value="Solteiro(a)">Solteiro</option>
                 <option value="Casado(a)">Casado</option>
             </select>
+            
+            <div class="termosBox">
+                <input type="checkbox" class="check" name="termos" value="True"><label class="termosText">Eu concordo com os termos.</label>
+            </div>
 
+            
             <button class="loginButton" type="submit">Cadastrar</button>
-            <label class="failedAuthMessage"></label>
         </form>
     </div>
 </body>
