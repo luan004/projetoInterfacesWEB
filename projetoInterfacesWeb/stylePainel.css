@@ -67,7 +67,7 @@ h1 {
 }
 
 .paragrafo {
-    width: 300px;
+    width: 100%;
     text-align: justify;
     font-family: Nunito;
 }
